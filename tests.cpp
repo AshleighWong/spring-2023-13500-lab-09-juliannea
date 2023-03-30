@@ -62,6 +62,10 @@ TEST_CASE("Tests for Coord3D* createCoord3D(double x, double y, double z)")
     CHECK((*posE).x == 0);
     CHECK((*posE).y == 0);
     CHECK((*posE).z == 100.0);
+    
+    CHECK((*posV).x == 1);
+    CHECK((*posV).y == -5);
+    CHECK((*posV).z == .2);
 
     deleteCoord3D(posE);
     deleteCoord3D(posV);
